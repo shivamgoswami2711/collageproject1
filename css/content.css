@@ -1,0 +1,42 @@
+.main_content{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.651);
+    width: 70%;
+    margin: 0 auto ;
+    padding-top: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    margin-left: 10px;
+}
+ul,ol{
+    margin:10px 0 0 5rem;
+}
+ul li{
+    list-style-type: circle;
+    font-weight: 700;
+}
+ol li{
+    list-style-type: lower-roman;
+    font-weight: 700;
+}
+table{
+    text-align: center;
+    margin: 0 auto;
+}
+th{
+    background-color: #1f222b82;
+    padding: 5px 20px;
+    color: rgb(228, 225, 225);
+}
+td{
+ border-bottom: 1px solid rgba(107, 106, 106, 0.657);
+ padding: 5px 20px;
+}
+tr:nth-child(odd){
+    background-color: #ccc;
+    border-bottom: 1px solid #000;
+}

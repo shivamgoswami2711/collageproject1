@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "scroll.css";
+@import "content.css";
+:root {
+    --bgColor: linear-gradient(90deg, rgba(45,96,162,1) 0%, rgba(32,142,164,1) 100%);
+    --headerColor: #ccc;
+    --color: #fff;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+  a{
+    text-decoration: none;
+    color: var(--color);
+  }
+ .main_container{
+      height: 100vh;
+      background: var(--bgColor);
+  }
+  header nav{
+    background-color: var(--headerColor);
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_logo{
+    height: 50px;
+  }
+  .nav_logo img{
+      height: 100%;
+      object-fit: cover;
+  }
+  .nav_container ul a{
+    color: #000;
+  }
+  .nav_container ul li{
+    font-weight: 800;
+    list-style-type: none;
+    display: inline;
+    padding: 16px 10px;
+    cursor: pointer;
+  }
+  .nav_container ul li:hover,
+  .nav_container ul li:focus{
+        color: var(--color);
+    background-color: #2bb92b;
+  }
+  .main_section{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: 30%;
+    width: 70%;
+    padding: 0 20px;
+    transform: translate(-50%,-50%);
+  }
+  .main_heading{
+    font-size: 40px;
+    color: var(--color);
+  }
+  .main_section h1{
+    padding-top: 12rem;
+  }
+  .main_section p{
+    margin: 2rem auto 5rem auto;    
+    font-size: 20px;
+    width: 70%;
+    color: var(--color);
+  }
+  .get_Start{
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 800;
+    background-color: blanchedalmond;
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    transition: .2s ease;
+    outline: none;
+  }
+  .get_Start:hover{
+    box-shadow: 3px 4px 12px 0px #1313136b;
+  }
+
+  .card{
+    margin: 20px 100px 20px 40px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  .card:hover{
+    box-shadow: 3px 4px 12px 0px #1313136b;
+  }
+  .card h3,.card p{
+    width: 60%;
+  }
+  .card h3{
+    color: #131313be;
+    font-weight: 700;
+  }
+  .card p{
+    font-weight: 500;
+    color: #131313a6!important;
+  }
+  footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #343a40;
+    color: var(--color)
+  }
+  .footer_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+  }  
+  .footer_container .links{
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer_container .links li{
+    padding: 5px;
+    list-style-type: none;
+  }
+  .footer_container .detail{
+    text-align: center;
+  }
+  .footer_container li:hover{
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+  }
