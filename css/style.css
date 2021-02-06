@@ -33,9 +33,7 @@
       height: 100%;
       object-fit: cover;
   }
-  .nav_container ul a{
-    color: #000;
-  }
+
   .nav_container ul li{
     font-weight: 800;
     list-style-type: none;
@@ -78,23 +76,31 @@
     text-decoration: none;
     color: rgb(112, 112, 112);
     transition: .2s ease;
+    border: none;
     outline: none;
   }
   .get_Start:hover{
     box-shadow: 3px 4px 12px 0px #1313136b;
   }
 
+  .nav_container ul a{
+    color: #000;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    text-align: center;
+    margin-top: 5rem;
+  }
   .card{
-    margin: 20px 100px 20px 40px;
+    /* margin: 20px 100px 20px 40px; */
     padding: 20px;
     border-radius: 10px;
     border: 1px solid #ccc;
   }
   .card:hover{
     box-shadow: 3px 4px 12px 0px #1313136b;
-  }
-  .card h3,.card p{
-    width: 60%;
   }
   .card h3{
     color: #131313be;
@@ -129,4 +135,7 @@
   .footer_container li:hover{
     cursor: pointer;
     border-bottom: 1px solid #fff;
+  }
+  .none{
+    display: none;
   }
